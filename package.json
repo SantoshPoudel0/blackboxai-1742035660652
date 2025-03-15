@@ -1,0 +1,22 @@
+{
+  "name": "mern-social-network",
+  "version": "1.0.0",
+  "description": "MERN Stack Social Networking Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "server": "nodemon server/app.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && npm install",
+    "install": "npm run install-server && npm run install-client",
+    "build": "cd client && npm run build"
+  },
+  "keywords": ["mern", "social-network", "react", "nodejs", "mongodb"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
